@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Storylab</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container">
+
+      <h1>Benchmarking sentiment analysis methods for large-scale texts: A case for using continuum-scored words and word shift graphs. <a href="https://arxiv.org/abs/1512.00531" target="_blank">[arxiv]</a></h1>
+      <h4>Andrew J. Reagan, Brian Tivnan, Jake Ryland Williams, Christopher M. Danforth, Peter Sheridan Dodds</h4>
+
+      <div id="topteamrow"></div>
+
+      <br>
+
+      <!-- <nav class="navbar navbar-default" role="navigation"> -->
+      <!-- 	<div class="container-fluid"> -->
+      <!-- 	  <\!-- Brand and toggle get grouped for better mobile display -\-> -->
+      <!-- 	  <div class="navbar-header"> -->
+      <!-- 	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> -->
+      <!--         <span class="sr-only">Toggle navigation</span> -->
+      <!--         <span class="icon-bar"></span> -->
+      <!--         <span class="icon-bar"></span> -->
+      <!--         <span class="icon-bar"></span> -->
+      <!-- 	    </button> -->
+      <!-- 	    <\!-- <a class="navbar-brand" href="#">Appendices:</a> -\-> -->
+      <!-- 	    <a class="navbar-brand" href="index.html">Online Appendices</a> -->
+      <!-- 	  </div> -->
+
+      <!-- 	  <\!-- Collect the nav links, forms, and other content for toggling -\-> -->
+      <!-- 	  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
+      <!-- 	    <ul class="nav navbar-nav"> -->
+      <!--         <\!-- <li class="active"><a href="index.html">Main</a></li> -\-> -->
+      <!--         <\!-- <li><a href="series.html">Time Series</a></li> -\-> -->
+      <!-- 	      <\!-- <li><a href="amb_vs_labMT_interactive.html">Interactive Plot</a></li> -\-> -->
+      <!--         <\!-- <li><a href="data.html">Data</a></li> -\-> -->
+      <!--         <\!-- <li><a href="team.html">Team</a></li> -\-> -->
+      <!-- 	    </ul> -->
+      <!-- 	  </div><\!-- /.navbar-collapse -\-> -->
+      <!-- 	</div><\!-- /.container-fluid -\-> -->
+      <!-- </nav> -->
+
+      <!-- Main component for a primary marketing message or call to action -->
+<!--       <div class="jumbotron"> -->
+<!-- <\!--         <h2>Explore the <a href="http://www.uvm.edu/~storylab/share/papers/cody2016a/cody2016a.pdf" target="_blank">paper</a></h2> -\-> -->
+<!-- <\!--         <p>Here we present an interactive version of labMT happiness scores versus ambient happiness scores given in Figure 1 of the main paper, and ambient  -\-> -->
+<!-- <\!-- happiness time series for every word in the labMT dataset. </p> -\-> -->
+<!--         <\!-- <p> -\-> -->
+<!--         <\!--   <a class="btn btn-lg btn-primary" href="series.html" role="button">View time series &raquo;</a> -\-> -->
+<!--         <\!-- </p> -\-> -->
+
+<!--       </div> -->
+
+          <h3>Abstract</h3>
+
+<p>
+The emergence and global adoption of social media 
+has rendered possible
+the real-time estimation of population-scale sentiment,
+issuing profound implications for 
+our understanding of human behavior.
+Given the growing assortment of sentiment measuring instruments,
+comparisons between them are evidently required.
+Here, we perform detailed, quantitative tests and qualitative assessments of 6 dictionary-based methods 
+applied to 4 different corpora, and briefly examine a further 7 methods.
+We show that a dictionary-based method will only perform
+both reliably and meaningfully if 
+(1) 
+the dictionary covers a sufficiently large enough
+portion of a given text's lexicon when weighted by word usage frequency;
+and 
+(2) 
+words are scored on a continuous scale.
+</p>
+
+<h3>Code</h3>
+
+All code for this project is publicly available at <a href="https://github.com/andyreagan/sentiment-analysis-comparison">https://github.com/andyreagan/sentiment-analysis-comparison</a>.
+The link to the sentiment dictionaries points to data that can be found in the labMTsimple package, over at <a href="https://github.com/andyreagan/labMT-simple">https://github.com/andyreagan/labMT-simple</a>.
+
+<h3>Data</h3>
+
+<p><strong>Twitter</strong> (we provide the message IDs for all tweets used in our study, respecting the Streaming API Terms of Service).</p>
+      <p>Terms of service: <a href="https://dev.twitter.com/overview/terms/agreement-and-policy">https://dev.twitter.com/overview/terms/agreement-and-policy</a>.</p>
+      <!-- <p>Message IDs (~200GB): <a href="http://www.uvm.edu/storylab/share/papers/reagan2016a/data/all-ids.txt.gz">download</a>.</p> -->
+      <p>Message IDs (~200GB total): <a href="http://www.uvm.edu/storylab/share/papers/reagan2016a/data/zipped/" target="_blank">list of files by day</a>.</p>
+<p><strong>New York Times</strong>.</p>
+<p>License: <a href="https://catalog.ldc.upenn.edu/license/the-new-york-times-annotated-corpus-ldc2008t19.pdf">https://catalog.ldc.upenn.edu/license/the-new-york-times-annotated-corpus-ldc2008t19.pdf</a>.</p>
+<p>Data: <a href="https://catalog.ldc.upenn.edu/LDC2008T19">https://catalog.ldc.upenn.edu/LDC2008T19</a>.</p>
+<p><strong>Movie Reviews</strong> (processed IMDb archive of the rec.arts.movies.reviews newsgroup, http://reviews.imdb.com/Reviews).</p>
+<p>Available at <a href="http://www.cs.cornell.edu/people/pabo/movie-review-data/">http://www.cs.cornell.edu/people/pabo/movie-review-data/</a> as polarity dataset v2.0.</p>
+<p>Direct link to details of this corpus: <a href="http://www.cs.cornell.edu/people/pabo/movie-review-data/poldata.README.2.0.txt">http://www.cs.cornell.edu/people/pabo/movie-review-data/poldata.README.2.0.txt</a>.</p>
+<p><strong>Google Books</strong>.</p>
+<p>License: <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode">Creative Commons Attribution-Non Commercial ShareAlike 3.0 Unported License</a>.</p>
+<p>Available at <a href="http://commondatastorage.googleapis.com/books/syntactic-ngrams/index.html">http://commondatastorage.googleapis.com/books/syntactic-ngrams/index.html</a>.</p>
+
+<p>A tarball of the full data directory used by the notebook scripts can be downloaded <a href="data/data.tar">here</a> (warning: roughly 25G download).
+
+    </div><!-- /.container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/d3.andy.js"></script>
+    <script src="js/topteam.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45564756-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body> <!-- test -->
+</html>
